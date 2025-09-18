@@ -21,7 +21,7 @@ dashboard = st.Page('mel.py', title='Dashboard', icon=':material/dashboard:', de
 medical=st.Page('medical.py', title='Medical Encouters', icon=':material/medical_services:')
 weight = st.Page('weight.py', title='Weight', icon=':material/monitor_weight:')
 vaccines = st.Page('vaccines.py', title="Vaccines", icon=":material/vaccines:")
-prescriptions = st.Page('prescription.py', title="Prescriptions", icon=':material/medication:')
+prescriptions = st.Page('prescription.py', title="Prescriptions")#, icon=':material/medication:')
 dental = st.Page('dental.py', title='Dental', icon=':material/dentistry:')
 
 
