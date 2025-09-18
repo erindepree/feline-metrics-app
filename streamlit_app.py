@@ -28,7 +28,8 @@ edit = st.Page('pages/edit.py', title='Add Information', icon=':material/edit:')
 
 with st.sidebar:
     st.image('images/feline_metrics_logo.png', width=200)
-    st.header("FelineMetrics")
+    pg.run()
+#    st.header("FelineMetrics")
 
 
 if st.session_state.logged_in:
