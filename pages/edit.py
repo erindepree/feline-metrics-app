@@ -7,4 +7,4 @@ st.set_page_config(
 
 st.title(":material/edit: FelineMetrics | Mel | Add a Record")
 
-st.write("Form to add information")
+st.write("Form to add information: * weight record, * upload picture of receipt, * add more details")
