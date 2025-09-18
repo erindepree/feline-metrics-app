@@ -25,7 +25,7 @@ weight = st.Page('pages/weight.py', title='Weight', icon=':material/monitor_weig
 vaccines = st.Page('pages/vaccines.py', title="Vaccines", icon=":material/vaccines:")
 prescriptions = st.Page('pages/prescriptions.py', title="Prescriptions", icon=':material/medication:')
 dental = st.Page('pages/dental.py', title='Dental', icon=':material/dentistry:')
-bloodwork = st.Page('pages/boodword.py', title="Bloodwork", icon=':material/health_metrics:')
+bloodwork = st.Page('pages/bloodword.py', title="Bloodwork", icon=':material/health_metrics:')
 edit = st.Page('pages/edit.py', title='Add Information', icon=':material/edit:')
 
 
