@@ -29,7 +29,7 @@ if st.session_state.logged_in:
     pg = st.navigation(
         {
             "Account": [logout_page],
-            'Reports': [dashboard, weight],
+            'Medical': [dashboard, medical, weight, vaccines, prescriptions, dental],
         }
     )
 else:
