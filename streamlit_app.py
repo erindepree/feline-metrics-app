@@ -20,8 +20,8 @@ logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 dashboard = st.Page('mel.py', title='Dashboard', icon=':material/dashboard:', default=True)
 medical=st.Page('medical.py', title='Medical Encouters', icon=':material/medical_services:')
 weight = st.Page('weight.py', title='Weight', icon=':material/monitor_weight:')
-vaccines = st.Page('vaccines.py', title="Vaccines", icon=":material/vaccines")
-prescriptions = st.Page('prescription.py', title="Prescriptions", icon=':material/medication')
+vaccines = st.Page('vaccines.py', title="Vaccines", icon=":material/vaccines:")
+prescriptions = st.Page('prescription.py', title="Prescriptions", icon=':material/medication:')
 dental = st.Page('dental.py', title='Dental', icon=':material/dentistry:')
 
 
