@@ -1,7 +1,7 @@
 import streamlit as st
 from datetime import date
 import pandas as pd
-import plotly.express as px
+# import plotly.express as px
 
 st.title(":material/pets: Feline Metrics")
 st.write(
