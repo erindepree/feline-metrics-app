@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.image('images/feline_metrics_logo.png', width=200)
-
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
@@ -27,6 +25,10 @@ prescriptions = st.Page('pages/prescriptions.py', title="Prescriptions", icon=':
 dental = st.Page('pages/dental.py', title='Dental', icon=':material/dentistry:')
 bloodwork = st.Page('pages/bloodwork.py', title="Bloodwork", icon=':material/health_metrics:')
 edit = st.Page('pages/edit.py', title='Add Information', icon=':material/edit:')
+
+with st.sidebar:
+    st.image('images/feline_metrics_logo.png', width=200)
+    st.header("FelineMetrics")
 
 
 if st.session_state.logged_in:
