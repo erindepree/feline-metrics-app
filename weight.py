@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon= ":material/weight:"
 )
 
-#st.title(":material/pets: Feline Metrics")
+st.title(":material/weight: FelineMetrics | Mel | Weight")
 #st.write(
 #    "Keep track of Mel's Weight"
 #)
@@ -40,5 +40,5 @@ df = pd.DataFrame([
 st.line_chart(df, x='date', y='weight')
 
 
-st.dataframe(df, use_container_width=True)
+#st.dataframe(df, use_container_width=True)
 #edited_df = st.data_editor(df, num_rows='dynamic')
