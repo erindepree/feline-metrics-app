@@ -1,4 +1,4 @@
-![Static Badge](https://img.shields.io/badge/web_app-link?style=flat&logo=streamlit&label=streamlit&link=https%3A%2F%2Ffelinemetrics.streamlit.app%2F)
+[![Static Badge](https://img.shields.io/badge/web_app-link?style=flat&logo=streamlit&label=streamlit)](https://felinemetrics.streamlit.app/)
 
 <img src="./images/feline_metrics_logo.png" style="width:200px;"> 
 
