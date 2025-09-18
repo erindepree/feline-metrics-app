@@ -7,7 +7,7 @@ st.set_page_config(
     page_icon= ":material/monitor_weight:"
 )
 
-st.title(":material/weight: FelineMetrics | Mel | Weight")
+st.title(":material/monitor_weight: FelineMetrics | Mel | Weight")
 #st.write(
 #    "Keep track of Mel's Weight"
 #)

@@ -5,4 +5,6 @@ st.set_page_config(
     page_icon = ":material/medication:"
 )
 
-st.title(":material/pill: FelineMetrics | Mel | Prescriptions")
+st.title(":material/medication: FelineMetrics | Mel | Prescriptions")
+
+st.write("list all medications prescriped and over the counter, indicate which are currently active")
