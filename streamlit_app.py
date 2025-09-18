@@ -1,40 +1,36 @@
 import streamlit as st
-from datetime import date
-import pandas as pd
-# import plotly.express as px
 
-st.title(":material/pets: Feline Metrics")
-st.write(
-    "Keep track of Mel's Weight"
-)
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
 
-df = pd.DataFrame([
-    {'pet': 'Mel', 'date': date(2013, 11, 1), 'weight': 9.0, 'location': 'park_vet', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2014, 11, 1), 'weight': 9.0, 'location': 'park_vet', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2015, 11, 1), 'weight': 9.3, 'location': 'park_vet', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2021, 7, 27), 'weight': 8.2, 'location': 'park_vet', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2022, 7, 14), 'weight': 8.2, 'location': 'park_vet', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2023, 3, 27), 'weight': 9.5, 'location': 'freeport', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2023, 4, 27), 'weight': 8.8, 'location': 'yarmouth', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2024, 6, 1), 'weight': 9.5, 'location': 'yarmouth', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 5, 12), 'weight': 7.5, 'location': 'yarmouth', 'notes': 'vet: good weight, stay below 8 pounds'},
-    {'pet': 'Mel', 'date': date(2025, 6, 22), 'weight': 7.72, 'location': 'wecare', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 6, 30), 'weight': 7.94, 'location': 'three_notch', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 7, 14), 'weight': 7.79, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 7, 16), 'weight': 7.74, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 7, 18), 'weight': 7.68, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 7, 23), 'weight': 7.87, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 7, 28), 'weight': 7.80, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 7, 31), 'weight': 7.80, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 8, 8), 'weight': 7.89, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 8, 10), 'weight': 7.96, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 8, 16), 'weight': 7.97, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 8, 20), 'weight': 7.90, 'location': 'home', 'notes': ''},
-    {'pet': 'Mel', 'date': date(2025, 9, 17), 'weight': 7.95, 'location': 'home', 'notes': ''}
-])
+def login():
+    if st.button("Log in"):
+        st.session_state.logged_in = True
+        st.rerun()
 
-st.line_chart(df, x='date', y='weight')
+def logout():
+    if st.button("Log out"):
+        st.session_state.logged_in = False
+        st.rerun()
+
+login_page = st.Page(login, title="Log in", icon=":material/login:")
+logout_page = st.Page(logout, title="Log out", icon=":material/logout:")
 
 
-st.dataframe(df, use_container_width=True)
-#edited_df = st.data_editor(df, num_rows='dynamic')
+dashboard = st.Page('mel.py', title='Dashboard', icon=':material/dashboard:', default=True)
+
+weight = st.Page('weight.py', title='Weight', icon=':material/weight:')
+
+
+if st.session_state.logged_in:
+    pg = st.navigation(
+        {
+            "Account": [logout_page],
+            'Reports': [dashboard, weight],
+        }
+    )
+else:
+    pg = st.navigation([login_page])
+
+
+pg.run()
