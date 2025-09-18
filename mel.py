@@ -7,4 +7,4 @@ st.set_page_config(
 
 st.title(":material/dashboard: FelineMetrics | Mel | Dashboard")
 
-st.write("include useful information here")
+st.write("Link to: weight figure, list of medical appointments, list of vaccines, dental, prescriptions, etc.")

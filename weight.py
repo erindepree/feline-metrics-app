@@ -4,7 +4,7 @@ import pandas as pd
 
 st.set_page_config(
     page_title= "Mel | Weight",
-    page_icon= ":material/weight:"
+    page_icon= ":material/monitor_weight:"
 )
 
 st.title(":material/weight: FelineMetrics | Mel | Weight")
