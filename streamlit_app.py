@@ -23,6 +23,7 @@ weight = st.Page('weight.py', title='Weight', icon=':material/monitor_weight:')
 vaccines = st.Page('vaccines.py', title="Vaccines", icon=":material/vaccines:")
 prescriptions = st.Page('prescriptions.py', title="Prescriptions", icon=':material/medication:')
 dental = st.Page('dental.py', title='Dental', icon=':material/dentistry:')
+edit = st.Page('edit.py', title='Add Information', icon=':material/edit:')
 
 
 if st.session_state.logged_in:
@@ -30,6 +31,7 @@ if st.session_state.logged_in:
         {
             "Account": [logout_page],
             "Mel's Medical Records": [dashboard, medical, weight, vaccines, prescriptions, dental],
+            "Add Records": [edit]
         }
     )
 else:
