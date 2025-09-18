@@ -1,12 +1,16 @@
 import streamlit as st
 from datetime import date
 import pandas as pd
-# import plotly.express as px
 
-st.title(":material/pets: Feline Metrics")
-st.write(
-    "Keep track of Mel's Weight"
+st.set_page_config(
+    page_title= "Mel | Weight",
+    page_icon= ":materials/weight:"
 )
+
+#st.title(":material/pets: Feline Metrics")
+#st.write(
+#    "Keep track of Mel's Weight"
+#)
 
 df = pd.DataFrame([
     {'pet': 'Mel', 'date': date(2013, 11, 1), 'weight': 9.0, 'location': 'park_vet', 'notes': ''},
