@@ -28,7 +28,7 @@ edit = st.Page('pages/edit.py', title='Add Information', icon=':material/edit:')
 
 with st.sidebar:
     st.image('images/feline_metrics_logo.png', width=200)
-    pg.run()
+#    pg.run()
 #    st.header("FelineMetrics")
 
 
