@@ -11,6 +11,6 @@ st.title(":material/stethoscope: Vet Info")
 
 df = pd.read_csv('./data/vets.csv')
 
-df = df.sort_values(by='vet_id')
+# df = df.sort_values(by='vet_id')
 
 st.dataframe(df)
