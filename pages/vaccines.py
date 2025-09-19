@@ -1,10 +1,10 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title = "FelineMetrics | Mel | Vaccines",
+    page_title = "FelineMetrics | Vaccines",
     page_icon = ":material/vaccines:"
 )
 
-st.title(":material/vaccines: FelineMetrics | Mel | Vaccines")
+st.title(":material/vaccines: Mel's Vaccines")
 
 st.write("List all vaccines with dates")

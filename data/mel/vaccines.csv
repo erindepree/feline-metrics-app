@@ -1,0 +1,18 @@
+date,vaccine,next_due,incident_id,vaccine_id,comments
+2011-10-31,cpp,,1000,,
+2011-10-31,FVRCP,11/1/2012,1000,fvrcp_3,
+2011-11-28,,,1002,,
+2012-11-01,"rabies, 3 yr",11/1/2015,1004,rabies_3,
+2012-11-01,FVRCP,11/1/2013,1004,fvrcp_1,
+2013-11-01,FVRCP,11/1/2014,1005,fvrcp_1,
+2014-11-01,FVRCP,11/1/2015,1006,fvrcp_1,
+2015-11-01,"rabies, 3 yr",11/1/2018,1007,rabies_3,
+2015-11-01,distemper,11/1/2018,1007,fvrcp_3,
+2018-11-01,FVRCP,11/1/2019,1008,fvrcp_1,"vaccine good for 3 yr, licsenced for 1 yr"
+2018-11-01,rabies,11/1/2021,1008,rabies_3,
+2021-07-27,rabies,7/27/2024,1009,rabies_3,
+2021-07-27,FVRCP,7/27/2024,1009,fvrcp_3,
+2023-04-27,"rabies feline purevax, 1 yr",4/26/2024,1012,rabies_1,
+2024-06-07,"FVRCP vaccine, 3 yr",6/7/2027,1014,fvrcp_3,
+2024-06-07,"rabies feline purevax, 1 yr",6/7/2025,1014,rabies_1,
+2025-05-12,"rabies feline purevax, 1 yr",5/12/2026,1016,rabies_1,

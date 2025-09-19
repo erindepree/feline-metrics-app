@@ -37,7 +37,7 @@ if not st.user.is_logged_in:
     #login_screen()
     pg = st.navigation([login_page])
 else:
-    st.header(f"Welcome, {st.user.name}!")
+    st.write(f"Signed in as: {st.user.name}!")
     pg = st.navigation(
         {
             "Account": [logout_page],
@@ -45,7 +45,5 @@ else:
             "Add Records": [edit]
         }
     )
-
-
 
 pg.run()

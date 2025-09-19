@@ -3,11 +3,11 @@ from datetime import date
 import pandas as pd
 
 st.set_page_config(
-    page_title= "Mel | Weight",
+    page_title= "FelineMetrics | Weight",
     page_icon= ":material/monitor_weight:"
 )
 
-st.title(":material/monitor_weight: FelineMetrics | Mel | Weight")
+st.title(":material/monitor_weight: Mel's Weight")
 #st.write(
 #    "Keep track of Mel's Weight"
 #)
