@@ -38,11 +38,7 @@ df = pd.DataFrame([
     {'pet': 'Mel', 'date': date(2025, 9, 17), 'weight': 7.95, 'location': 'home', 'notes': ''}
 ])
 
-#st.line_chart(df, x='date', y='weight')
 
-
-#st.dataframe(df, use_container_width=True)
-#edited_df = st.data_editor(df, num_rows='dynamic')
 fig = px.scatter(df, x='date', y='weight')
 
 fig.add_shape(
