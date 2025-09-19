@@ -25,7 +25,8 @@ prescriptions = st.Page('pages/prescriptions.py', title="Prescriptions", icon=':
 dental = st.Page('pages/dental.py', title='Dental', icon=':material/dentistry:')
 bloodwork = st.Page('pages/bloodwork.py', title="Bloodwork", icon=':material/health_metrics:')
 edit = st.Page('pages/edit.py', title='Add Information', icon=':material/edit:')
-
+vets = st.Page('pages/vets.py', title='Vet Information', icon= ':material/stethoscope:')
+clinics = st.Page('page/clinics.py', title='Clinic Information', icon= ':material/local_hospital:')
 
 
 
@@ -42,6 +43,7 @@ else:
         {
             "Account": [logout_page],
             "Mel's Medical Records": [dashboard, medical, weight, vaccines, prescriptions, dental, bloodwork],
+            "General Information": [vets, clinics]
             "Add Records": [edit]
         }
     )
