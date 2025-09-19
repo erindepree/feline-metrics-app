@@ -22,7 +22,7 @@ row2.page_link("pages/dental.py", label="Dental Care", icon= ":material/dentistr
 row2.page_link("pages/bloodwork.py", label="Bloodwork Results", icon= ":material/health_metrics:")
 
 
-st.header(General Information)
+st.header("General Information")
 
 row3 = st.container(horizontal=True, horizontal_alignment='center')
 
