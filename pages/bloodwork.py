@@ -10,6 +10,6 @@ st.title(":material/health_metrics: Mel's Bloodwork")
 
 st.write("Bloodwork graphs here")
 
-df_blood = pd.read_csv("../data/mel/bloodwork.csv")
+df_blood = pd.read_csv("./data/mel/bloodwork.csv")
 
 st.dataframe(df_blood)
