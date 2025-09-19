@@ -7,6 +7,7 @@ st.set_page_config(
 
 st.title(":material/dashboard: Mel's Dashboard")
 
+st.write("Replace with graphs of useful info and such.")
 
 st.subheader("Mel's Medical Records")
 
