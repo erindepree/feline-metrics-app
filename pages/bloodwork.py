@@ -15,7 +15,7 @@ st.write("Bloodwork graphs here")
 df_blood = pd.read_csv("./data/mel/bloodwork.csv", parse_dates=['date'])
 df_blood.sort_values(by='date')
 
-blood_dict = pd.read_csv("./data/boodwork_dict.csv")
+blood_dict = pd.read_csv("./data/bloodwork_dict.csv")
 
 plot_opts = df_blood.drop(columns=['date', 'comments', 'blood_parasites', 'rbc_morph', 'platelet_est']).columns
 
