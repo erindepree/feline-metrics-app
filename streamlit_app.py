@@ -43,7 +43,7 @@ else:
         {
             "Account": [logout_page],
             "Mel's Medical Records": [dashboard, medical, weight, vaccines, prescriptions, dental, bloodwork],
-            "General Information": [vets, clinics]
+            "General Information": [vets, clinics],
             "Add Records": [edit]
         }
     )
