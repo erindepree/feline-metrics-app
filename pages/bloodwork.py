@@ -28,10 +28,11 @@ fig.add_shape(
     line_color='magenta',
     line_width=3, 
     x0=0, 
-    x1 = 1, xref='paper',
+    x1= 1, 
+    xref='paper',
     y0= blood_dict[blood_dict['test'] == var_plot]['min'],
     y1= blood_dict[blood_dict['test'] == var_plot]['min'],
-    ref = 'y'
+    yref = 'y'
 )
 
 fig.add_shape(
@@ -39,10 +40,11 @@ fig.add_shape(
     line_color='magenta',
     line_width=3, 
     x0=0, 
-    x1 = 1, xref='paper',
+    x1 = 1, 
+    xref='paper',
     y0= blood_dict[blood_dict['test'] == var_plot]['max'],
     y1= blood_dict[blood_dict['test'] == var_plot]['max'],
-    ref = 'y'
+    yref = 'y'
 )
 
 
