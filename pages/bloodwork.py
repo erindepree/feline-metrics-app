@@ -15,7 +15,8 @@ df_blood = pd.read_csv("./data/mel/bloodwork.csv")
 
 plot_opts = df_blood.drop(columns=['date', 'comments', 'blood_parasites', 'rbc_morph', 'platelet_est']).columns
 
-st.dataframe(df_blood)
+# st.dataframe(df_blood)
+df_blood.sort_values(by='date')
 
 var_plot = st.radio('Select Variable to Plot:', options = plot_opts, index= 10)
 
