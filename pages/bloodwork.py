@@ -19,6 +19,6 @@ st.dataframe(df_blood)
 
 var_plot = st.radio('Select Variable to Plot:', options = plot_opts, index= 10)
 
-fig = px.line(df_blood, x='date', y=var_plot)
+fig = px.line(df_blood, x='date', y=var_plot, title="Bloodwork")
 
 st.plotly_chart(fig)
