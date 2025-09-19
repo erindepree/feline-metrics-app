@@ -8,7 +8,7 @@ st.set_page_config(
 st.title(":material/dashboard: Mel's Dashboard")
 
 
-st.header("Mel's Medical Records")
+st.subheader("Mel's Medical Records")
 
 row1 = st.container(horizontal=True, horizontal_alignment='center')
 row2 = st.container(horizontal=True, horizontal_alignment='center')
@@ -28,3 +28,8 @@ row3 = st.container(horizontal=True, horizontal_alignment='center')
 
 row3.page_link("pages/vets.py", label="Vet Info", icon= ":material/stethoscope:")
 row3.page_link("pages/clinics.py", label="Clinic Info", icon= ":material/local_hospital:")
+
+st.subheader("Add Records - Coming Soon!")
+row4 = st.container(horizontal=True, horizontal_alignment='center')
+
+row4.page_link("pages/edit.py", labe="Add Information", icon=":material/edit:")
