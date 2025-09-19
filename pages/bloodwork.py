@@ -1,5 +1,6 @@
 import pandas as pd
 import plotly.express as px
+from datetime import date
 import streamlit as st
 
 st.set_page_config(
@@ -11,7 +12,7 @@ st.title(":material/health_metrics: Mel's Bloodwork")
 
 st.write("Bloodwork graphs here")
 
-df_blood = pd.read_csv("./data/mel/bloodwork.csv")
+df_blood = pd.read_csv("./data/mel/bloodwork.csv", parse_dates=['date'])
 
 plot_opts = df_blood.drop(columns=['date', 'comments', 'blood_parasites', 'rbc_morph', 'platelet_est']).columns
 
