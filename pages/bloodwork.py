@@ -18,7 +18,7 @@ df_blood.sort_values(by='date')
 plot_opts = df_blood.drop(columns=['date', 'comments', 'blood_parasites', 'rbc_morph', 'platelet_est']).columns
 
 
-var_plot = st.radio('Select Variable to Plot:', options = plot_opts, index= 10)
+var_plot = st.selectbox('Select Variable to Plot:', options = plot_opts, index= 10)
 
 fig = px.scatter(df_blood, x='date', y=var_plot, title="Bloodwork")
 
