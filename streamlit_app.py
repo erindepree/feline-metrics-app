@@ -26,7 +26,7 @@ dental = st.Page('pages/dental.py', title='Dental', icon=':material/dentistry:')
 bloodwork = st.Page('pages/bloodwork.py', title="Bloodwork", icon=':material/health_metrics:')
 edit = st.Page('pages/edit.py', title='Add Information', icon=':material/edit:')
 vets = st.Page('pages/vets.py', title='Vet Information', icon= ':material/stethoscope:')
-clinics = st.Page('page/clinics.py', title='Clinic Information', icon= ':material/local_hospital:')
+clinics = st.Page('pages/clinics.py', title='Clinic Information', icon= ':material/local_hospital:')
 
 
 
