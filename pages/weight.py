@@ -1,6 +1,7 @@
 import streamlit as st
 from datetime import date
 import pandas as pd
+import plotly.express as px
 
 st.set_page_config(
     page_title= "FelineMetrics | Weight",
@@ -37,8 +38,24 @@ df = pd.DataFrame([
     {'pet': 'Mel', 'date': date(2025, 9, 17), 'weight': 7.95, 'location': 'home', 'notes': ''}
 ])
 
-st.line_chart(df, x='date', y='weight')
+#st.line_chart(df, x='date', y='weight')
 
 
 #st.dataframe(df, use_container_width=True)
 #edited_df = st.data_editor(df, num_rows='dynamic')
+fig = px.scatter(df, x='date', y='weight')
+
+fig.add_shape(
+    type='line',
+    line_color='magenta',
+    line_width=3, 
+    x0=0, 
+    x1 = 1, 
+    xref='paper',
+    y0= 8,
+    y1= 8,
+    yref = 'y'
+)
+
+
+st.plotly_chart(fig)
